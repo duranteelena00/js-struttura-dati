@@ -1,9 +1,28 @@
-#display {
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    margin: 20px 0 0 20px;
+}
+
+.form-container>p{
+    margin-bottom: 7.5px;
+}
+
+#deck-container>.card {
+    margin: 20px 0 20px 20px;
+    padding: 15px 15px 15px 0;
     width: 280px;
     border: 1px solid black;
     border-radius: 15px;
 }
 
-span {
+.underlined {
    text-decoration: underline; 
+}
+
+.hidden {
+    display: none;
 }

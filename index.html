@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic Card replica</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="display"></div>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <p>Seleziona la categoria e cerca la tua carta.</p>
+      <select name="" id="research-category">
+        <option selected value="all">All</option>
+        <option value="name">Name</option>
+        <option value="launch-cost">Launch cost</option>
+        <option value="cathegory">Cathegory</option>
+        <option value="Illustrator">Illustrator</option>
+        <option value="collection">Collection</option>
+        <option value="strength">Strength</option>
+      </select>
+      <input type="search" id="research-bar" placeholder="search by text..." class="hidden"/>
+      <button type="button" id="submit-research">Search</button>
+    </div>
+
+    <section id="deck-container">
+    </section>
+    
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
